@@ -1,0 +1,60 @@
+// Import your components CSS files here.
+@import "alert";
+@import "avatar";
+@import "navbar";
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+a:link {
+    text-decoration: none;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0;
+  }
+  
+  .banner h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 128px;
+    font-family: 'Prata';
+  }
+  
+  .banner p {
+    font-size: 20px;
+    color: white;
+    opacity: .7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+
+.cards-container {
+    width: fit-content;
+}
+
+  .card-category {
+    background-size: cover;
+    background-position: center;
+    height: 240px;
+    min-width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-decoration: none;
+    border-radius: 2px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    filter: grayscale(50%);
+    transition: 0.3s;
+    &:hover {
+        filter: unset;
+    }
+  }
+  
+  h3 {
+    font-family: 'Prata'
+  }
