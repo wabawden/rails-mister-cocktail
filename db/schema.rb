@@ -40,13 +40,12 @@ ActiveRecord::Schema.define(version: 2020_08_14_105153) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "image_url", default: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSWn6L7N1RXGrfzCDnXs5NONZseJxHit4Z9bA&usqp=CAU"
   end
 
   create_table "doses", force: :cascade do |t|
     t.string "description"
-    t.bigint "cocktail_id", null: false
-    t.bigint "ingredient_id", null: false
+    t.bigint "cocktail_id"
+    t.bigint "ingredient_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["cocktail_id"], name: "index_doses_on_cocktail_id"

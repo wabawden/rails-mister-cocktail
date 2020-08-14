@@ -1,5 +1,10 @@
 class CreateDoses < ActiveRecord::Migration[6.0]
-  def up
-    add_column :image_url, :string, default: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSWn6L7N1RXGrfzCDnXs5NONZseJxHit4Z9bA&usqp=CAU"
-  end
+    def change
+        create_table :doses do |t|
+          t.string :description
+          t.references :cocktail, foreign_key: true
+          t.references :ingredient, foreign_key: true
+          t.timestamps
+        end
+      end
 end
