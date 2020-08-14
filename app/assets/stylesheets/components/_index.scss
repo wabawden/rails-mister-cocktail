@@ -4,6 +4,10 @@
 @import "navbar";
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
+h1 {
+  font-family: 'Prata';
+}
+
 a:link {
     text-decoration: none;
 }
@@ -14,6 +18,10 @@ a:link {
     padding: 250px 0;
   }
   
+  .banner-show {
+    padding: 50px 0;
+  }
+
   .banner h1 {
     margin: 0;
     color: white;
@@ -55,6 +63,35 @@ a:link {
     }
   }
   
+  .card-category-show {
+    height: 480px;
+    min-width: 480px;
+    display: block;
+    font-family: 'Prata';
+    filter: unset;
+  }
+
+  .card-category-create {
+    height: 360px;
+    min-width: 100%;
+    display: block;
+    filter: unset;
+    font-size: 16px;
+
+  }
+
+
+  .card-category-show p {
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .card-category-show a {
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+  }
+
   h3 {
     font-family: 'Prata'
   }

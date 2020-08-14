@@ -16,12 +16,6 @@ drinks.each do |drink|
     Ingredient.create(name: drink["strIngredient1"])
 end
 
-Cocktail.create(name: "Cosmopolitan")
-Cocktail.create(name: "Bloody Mary")
-Cocktail.create(name: "Cuba Libra")
-Cocktail.create(name: "Mojito")
-Cocktail.create(name: "Moscow Mule")
-Cocktail.create(name: "Zombie")
 
 
 
